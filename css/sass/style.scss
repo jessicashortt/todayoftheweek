@@ -1,0 +1,108 @@
+@import "compass";
+
+
+// variables
+$SSP: "Source Sans Pro", sans-serif;
+$SCP: "Source Code Pro", monospace;
+$blue: #55acee;
+
+
+// reset //
+* {
+	margin: 0; padding: 0; overflow-x: hidden;
+}
+
+header {
+	background: $blue;
+	text-align: center;
+	padding: 70px 0;
+	// margin-top: 5px;
+	h1 {
+		color: white;
+		font-family: $SSP;
+		font-size: 70px;
+		// text-transform: uppercase;
+		// display: none;
+	}
+	h2 {
+		font-family: $SCP;
+		color: white;
+		font-size: 40px;
+		font-weight: 200;
+	}
+}
+
+.main {
+	max-width: 960px;
+	margin: 50px auto;
+	font-family: $SSP;
+	.tweet,
+	.tweet-reply {
+		padding: 20px 0;
+		.profile_img {
+			float: left;
+			padding-right: 10px;
+			img {
+				border-radius: 4px;
+			}
+		}
+		h4 {
+			font-size: 20px;
+			span {
+				font-weight: 600;
+				display: block;
+				font-size: 18px;
+			}
+		}
+		p {
+			clear: both;
+			padding: 20px 0 10px 0;
+			a {
+				color: $blue;
+				padding: 5px 0;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			img {
+				display: block;
+				margin: 20px 0 20px 20px;
+			}
+		}
+		
+		.date {
+			display: block;
+			color: #666;
+		}
+	}
+	.reply-msg {
+		color: #444;
+		font-size: 16px;
+		position: relative;
+		left: 50px;
+		margin-bottom: 10px;
+	}
+	.tweet-reply {
+		background: #ededed;
+		padding: 10px 20px;
+		border-radius: 5px;
+		position: relative;
+		left: 50px;
+		margin-bottom: 20px;
+	}
+	
+}
+
+footer {
+	padding: 10px 0;
+	text-align: center;
+	font-family: $SCP;
+	font-size: 12px;
+	p {
+		a {
+			color: #888;
+			padding: 5px 0;
+		}
+	}
+}
